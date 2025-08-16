@@ -1,0 +1,54 @@
+2025-08-16 13:04:42,327 - web_server - ERROR - Status check error: no such table: clubs
+2025-08-16 13:04:55,478 - web_server - ERROR - Status check error: no such table: clubs
+2025-08-16 13:08:12,491 - discord.client - INFO - logging in using static token
+2025-08-16 13:08:12,931 - bot - INFO - Bot setup completed
+2025-08-16 13:08:13,294 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 9b51d53d9a9481e93f1718c616b903b6).
+2025-08-16 13:08:15,301 - bot - INFO - Bot logged in as RHL ASSISTANT#0956 (ID: 1405875145075200020)
+2025-08-16 13:08:15,301 - bot - INFO - Connected to 2 guilds
+2025-08-16 13:08:15,749 - bot - INFO - Synced 24 slash commands
+2025-08-16 13:08:15,750 - bot - INFO - Bot is ready!
+2025-08-16 13:09:47,132 - database - INFO - All data reset successfully
+2025-08-16 13:10:11,429 - commands.clubs - INFO - Club 'barca' created by kokexe for kokexe
+2025-08-16 13:10:31,311 - commands.clubs - INFO - Club 'madrid' created by kokexe for felin_x1
+2025-08-16 13:11:17,497 - commands.matches - INFO - Match created: madrid vs barca at 2025-08-16 13:18:00 by kokexe
+2025-08-16 13:13:44,310 - bot - INFO - Bot setup completed
+2025-08-16 13:13:44,580 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 008349283ec13045470faf35a4aca86f).
+2025-08-16 13:13:46,589 - bot - INFO - Bot logged in as RHL ASSISTANT#0956 (ID: 1405875145075200020)
+2025-08-16 13:13:46,589 - bot - INFO - Connected to 2 guilds
+2025-08-16 13:13:46,883 - bot - INFO - Synced 24 slash commands
+2025-08-16 13:13:46,883 - bot - INFO - Bot is ready!
+2025-08-16 13:13:51,776 - bot - INFO - Bot setup completed
+2025-08-16 13:13:52,061 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: d247763e574034136011d277df92419a).
+2025-08-16 13:13:54,076 - bot - INFO - Bot logged in as RHL ASSISTANT#0956 (ID: 1405875145075200020)
+2025-08-16 13:13:54,078 - bot - INFO - Connected to 2 guilds
+2025-08-16 13:14:15,264 - bot - INFO - Bot setup completed
+2025-08-16 13:14:15,584 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: e3553d7e8ca8d1b04cc3b688c8cfc09c).
+2025-08-16 13:14:17,604 - bot - INFO - Bot logged in as RHL ASSISTANT#0956 (ID: 1405875145075200020)
+2025-08-16 13:14:17,604 - bot - INFO - Connected to 2 guilds
+2025-08-16 13:14:33,854 - bot - INFO - Bot setup completed
+2025-08-16 13:14:34,139 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 37054b79240507f4e49af1039c8665d8).
+2025-08-16 13:14:35,069 - commands.players - INFO - Player 'kokex' created by kokexe
+2025-08-16 13:14:36,156 - bot - INFO - Bot logged in as RHL ASSISTANT#0956 (ID: 1405875145075200020)
+2025-08-16 13:14:36,156 - bot - INFO - Connected to 2 guilds
+2025-08-16 13:14:36,282 - discord.http - WARNING - We are being rate limited. PUT https://discord.com/api/v10/applications/1405875145075200020/commands responded with 429. Retrying in 10.44 seconds.
+2025-08-16 13:15:47,003 - bot - INFO - Synced 24 slash commands
+2025-08-16 13:15:47,003 - bot - INFO - Bot is ready!
+2025-08-16 13:16:35,621 - bot - INFO - Bot setup completed
+2025-08-16 13:16:35,934 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 567b41c7bb38ec6f98f7c4e91c7d80f0).
+2025-08-16 13:16:37,941 - bot - INFO - Bot logged in as RHL ASSISTANT#0956 (ID: 1405875145075200020)
+2025-08-16 13:16:37,941 - bot - INFO - Connected to 2 guilds
+2025-08-16 13:16:38,191 - bot - INFO - Synced 24 slash commands
+2025-08-16 13:16:38,192 - bot - INFO - Bot is ready!
+2025-08-16 13:16:53,988 - bot - INFO - Bot setup completed
+2025-08-16 13:16:54,379 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: fff8fc4f4c3d969c744a37a6ffe7f524).
+2025-08-16 13:16:56,387 - bot - INFO - Bot logged in as RHL ASSISTANT#0956 (ID: 1405875145075200020)
+2025-08-16 13:16:56,387 - bot - INFO - Connected to 2 guilds
+2025-08-16 13:17:03,855 - bot - INFO - Bot setup completed
+2025-08-16 13:17:04,376 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 179417766778b868df5b21f7fb4529f6).
+2025-08-16 13:17:06,390 - bot - INFO - Bot logged in as RHL ASSISTANT#0956 (ID: 1405875145075200020)
+2025-08-16 13:17:06,390 - bot - INFO - Connected to 2 guilds
+2025-08-16 13:17:06,526 - discord.http - WARNING - We are being rate limited. PUT https://discord.com/api/v10/applications/1405875145075200020/commands responded with 429. Retrying in 1.54 seconds.
+2025-08-16 13:18:08,186 - bot - INFO - Synced 25 slash commands
+2025-08-16 13:18:08,186 - bot - INFO - Bot is ready!
+2025-08-16 13:18:08,275 - commands.matches - INFO - Match created: barca vs madrid at 2025-08-17 13:25:00 by kokexe
+2025-08-16 13:18:29,442 - database - INFO - All data reset successfully

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Club Bot - Status</title>
+    <link href="https://cdn.replit.com/agent/bootstrap-agent-dark-theme.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <!-- Header -->
+                <div class="text-center mb-5">
+                    <div class="bot-icon mb-3">
+                        <i class="fas fa-futbol fa-4x text-primary"></i>
+                    </div>
+                    <h1 class="display-4 fw-bold">Football Club Bot</h1>
+                    <p class="lead text-muted">
+                        Professional Discord bot for football club management
+                    </p>
+                </div>
+
+                <!-- Status Card -->
+                <div class="card mb-4">
+                    <div class="card-body text-center">
+                        <div id="status-indicator" class="status-indicator mb-3">
+                            <div class="spinner-border text-primary" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                        </div>
+                        <h3 id="status-text" class="card-title">Checking Status...</h3>
+                        <p id="status-subtitle" class="card-text text-muted">
+                            Please wait while we check the bot status
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Statistics Card -->
+                <div class="card mb-4" id="stats-card" style="display: none;">
+                    <div class="card-header">
+                        <h5 class="card-title mb-0">
+                            <i class="fas fa-chart-bar me-2"></i>
+                            Database Statistics
+                        </h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="row text-center">
+                            <div class="col-md-4">
+                                <div class="stat-item">
+                                    <i class="fas fa-building fa-2x text-primary mb-2"></i>
+                                    <h3 id="clubs-count" class="stat-number">-</h3>
+                                    <p class="stat-label">Clubs</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="stat-item">
+                                    <i class="fas fa-users fa-2x text-success mb-2"></i>
+                                    <h3 id="players-count" class="stat-number">-</h3>
+                                    <p class="stat-label">Players</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="stat-item">
+                                    <i class="fas fa-exchange-alt fa-2x text-warning mb-2"></i>
+                                    <h3 id="transfers-count" class="stat-number">-</h3>
+                                    <p class="stat-label">Transfers</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Features Card -->
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h5 class="card-title mb-0">
+                            <i class="fas fa-star me-2"></i>
+                            Bot Features
+                        </h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul class="feature-list">
+                                    <li><i class="fas fa-building text-primary"></i> Club Management</li>
+                                    <li><i class="fas fa-users text-success"></i> Player Database</li>
+                                    <li><i class="fas fa-exchange-alt text-warning"></i> Transfer System</li>
+                                    <li><i class="fas fa-calendar text-info"></i> Match Scheduling</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="feature-list">
+                                    <li><i class="fas fa-euro-sign text-success"></i> Financial Management</li>
+                                    <li><i class="fas fa-chart-line text-primary"></i> Statistics & Analytics</li>
+                                    <li><i class="fas fa-bell text-warning"></i> Match Reminders</li>
+                                    <li><i class="fas fa-cog text-secondary"></i> Admin Controls</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Commands Card -->
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h5 class="card-title mb-0">
+                            <i class="fas fa-terminal me-2"></i>
+                            Available Commands
+                        </h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h6 class="text-primary">Club Commands</h6>
+                                <ul class="command-list">
+                                    <li><code>/create_club</code></li>
+                                    <li><code>/club_info</code></li>
+                                    <li><code>/list_clubs</code></li>
+                                    <li><code>/set_club_money</code></li>
+                                    <li><code>/richest_clubs</code></li>
+                                </ul>
+
+                                <h6 class="text-success mt-3">Player Commands</h6>
+                                <ul class="command-list">
+                                    <li><code>/create_player</code></li>
+                                    <li><code>/player_info</code></li>
+                                    <li><code>/set_player_value</code></li>
+                                    <li><code>/transfer_player</code></li>
+                                    <li><code>/free_agents</code></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h6 class="text-warning">Match Commands</h6>
+                                <ul class="command-list">
+                                    <li><code>/create_match</code></li>
+                                    <li><code>/upcoming_matches</code></li>
+                                    <li><code>/my_matches</code></li>
+                                </ul>
+
+                                <h6 class="text-info mt-3">Statistics Commands</h6>
+                                <ul class="command-list">
+                                    <li><code>/league_stats</code></li>
+                                    <li><code>/club_rankings</code></li>
+                                    <li><code>/transfer_market</code></li>
+                                    <li><code>/compare_clubs</code></li>
+                                    <li><code>/top_players</code></li>
+                                </ul>
+
+                                <h6 class="text-danger mt-3">Admin Commands</h6>
+                                <ul class="command-list">
+                                    <li><code>/bot_info</code></li>
+                                    <li><code>/reset_all</code></li>
+                                    <li><code>/create_embed</code></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer -->
+                <div class="text-center text-muted">
+                    <p class="mb-1">
+                        <i class="fas fa-code me-1"></i>
+                        Built with Python & Discord.py
+                    </p>
+                    <p class="mb-0">
+                        <i class="fas fa-heart text-danger me-1"></i>
+                        Made for football club management
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Check bot status on page load
+        async function checkStatus() {
+            try {
+                const response = await fetch('/status');
+                const data = await response.json();
+                
+                const statusIndicator = document.getElementById('status-indicator');
+                const statusText = document.getElementById('status-text');
+                const statusSubtitle = document.getElementById('status-subtitle');
+                const statsCard = document.getElementById('stats-card');
+                
+                if (data.status === 'online') {
+                    statusIndicator.innerHTML = '<i class="fas fa-check-circle fa-3x text-success"></i>';
+                    statusText.textContent = 'Bot is Online';
+                    statusText.className = 'card-title text-success';
+                    statusSubtitle.textContent = 'All systems operational';
+                    
+                    // Show statistics if available
+                    if (data.stats) {
+                        document.getElementById('clubs-count').textContent = data.stats.clubs;
+                        document.getElementById('players-count').textContent = data.stats.players;
+                        document.getElementById('transfers-count').textContent = data.stats.transfers;
+                        statsCard.style.display = 'block';
+                    }
+                } else {
+                    statusIndicator.innerHTML = '<i class="fas fa-exclamation-triangle fa-3x text-danger"></i>';
+                    statusText.textContent = 'Bot is Offline';
+                    statusText.className = 'card-title text-danger';
+                    statusSubtitle.textContent = data.error || 'Please check bot logs';
+                }
+            } catch (error) {
+                const statusIndicator = document.getElementById('status-indicator');
+                const statusText = document.getElementById('status-text');
+                const statusSubtitle = document.getElementById('status-subtitle');
+                
+                statusIndicator.innerHTML = '<i class="fas fa-times-circle fa-3x text-danger"></i>';
+                statusText.textContent = 'Connection Error';
+                statusText.className = 'card-title text-danger';
+                statusSubtitle.textContent = 'Unable to connect to the bot';
+            }
+        }
+        
+        // Check status on page load
+        document.addEventListener('DOMContentLoaded', checkStatus);
+        
+        // Auto-refresh status every 30 seconds
+        setInterval(checkStatus, 30000);
+    </script>
+</body>
+</html>
