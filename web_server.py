@@ -24,9 +24,16 @@ def create_app():
     def start_discord_bot():
         """Start Discord bot in a separate thread"""
         try:
+            import time
+            
+            # Wait to avoid initial rate limiting on new deployments
+            logger.info("Waiting 30 seconds before starting bot to avoid rate limiting...")
+            time.sleep(30)
+            
             from bot import FootballBot
             discord_token = os.getenv("DISCORD_TOKEN")
             if discord_token:
+                logger.info("Starting Discord bot...")
                 bot = FootballBot()
                 
                 # Create new event loop for this thread
